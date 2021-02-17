@@ -1,0 +1,12 @@
+.test {
+	color: #fff;
+}
+
+.test .blue {
+	background-color: blue;
+}
+
+.test > .blue {
+	color: red;
+	transform: translate(50%, 5px) scale(5);
+}

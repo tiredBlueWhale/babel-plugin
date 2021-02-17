@@ -1,0 +1,23 @@
+{
+  "name": "babel-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run prepublish --prefix ../css-to-react-native-transform && node css-transform"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "css-to-react-native-transform": "../css-to-react-native-transform",
+    "react-native-sass-transformer": "../react-native-sass-transformer"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "node-sass": "^5.0.0"
+  }
+}
