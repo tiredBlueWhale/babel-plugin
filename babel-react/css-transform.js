@@ -14,7 +14,7 @@ const test = `
 .loginDialog, .blub {
     width: 50px;
     padding: 20rem;
-    transform: none;
+    transform: unset;
 }
 .test {
     color: white !important;
@@ -24,21 +24,15 @@ const test = `
 `
 
 const test1 = `
-.maskEditor__content {
-    @include flex-wrapper-wrap();
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100% !important;
-    @include break-smart--landscape {
-        height: calc(100% + 20px);
-    }
-    @include break-tablet--portrait {
-        height: 86%;
-    }
+.toolBox__flap {
+    color: white !important;
+    display: grid;
+    padding: rem(10);
+    
 }
 `
 
-const result = transform(test);
+const result = transform(test1);
 // const resultSass = sassTransformer(test);
 
 // console.log(resultSass);
